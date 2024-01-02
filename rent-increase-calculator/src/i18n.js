@@ -7,7 +7,7 @@ i18n
   .use(initReactI18next)
   .init({
     debug: true,
-    fallbackLng: 'en',
+    fallbackLng: 'fr',
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
     },
@@ -15,12 +15,12 @@ i18n
     resources: {
       en: {
         translation: {
-         title: "Welcome to React"
+         title: "RENT INCREASE ESTIMATE CALCULATOR"
         }
       },
       fr: {
         translation: {
-         title: "Bienvenue a React !"
+         title: "OUTIL D'ESTIMATION D'HAUSSE DE LOYER"
         }
       },
     }
