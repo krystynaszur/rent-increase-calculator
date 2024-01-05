@@ -153,7 +153,7 @@ const formatted = parsedInput.toFixed(2);*/
    event.target.value = input;*/
 
   return (
-    <div className="app" key="app">
+    <div className="app bg-emerald-50" key="app">
       <div key="lang-switcher" className="lang-switcher">
         {lngs.map((lng) => {
           const { code, native } = lng;
@@ -172,7 +172,7 @@ const formatted = parsedInput.toFixed(2);*/
         })}
       </div>
       <header key="header">
-        <h1 className="title text-4xl text-center">{t("title")}</h1>
+        <h1 className="title text-4xl text-center font-extrabold">{t("title")}</h1>
       </header>
       <RentForm />
       <main
