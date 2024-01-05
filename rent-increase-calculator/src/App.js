@@ -1,6 +1,7 @@
 import "./App.css";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import { RentForm } from './RentForm'
 
 const lngs = [
   { code: "en", native: "English" },
@@ -173,6 +174,7 @@ const formatted = parsedInput.toFixed(2);*/
       <header key="header">
         <h1 className="title text-4xl text-center">{t("title")}</h1>
       </header>
+      <RentForm />
       <main
         key="main"
         className="min-h-max flex items-center justify-center text-gray-500 text-sm max-w-2xl"
