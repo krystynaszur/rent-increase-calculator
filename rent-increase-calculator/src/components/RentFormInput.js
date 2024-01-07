@@ -1,8 +1,17 @@
 import { Required } from "./Required";
 import { Info } from "./Info";
+import { useFormContext } from "react-hook-form";
+import { AnimatePresence, motion } from "framer-motion";
+import { MdError } from "react-icons/md";
+import { findInputError, isFormInvalid } from '../utils'
 
 
-export const RentFormInput = ({ label, type, id, info, placeholder, required, currency }) => {
+export const RentFormInput = ({ label, type, id, info, placeholder, validation, name, required, currency }) => {
+    const { register, formState: { errors }} = useFormContext();
+
+    const inputError = findInputError(errors, name)
+    const isInvalid = isFormInvalid(inputError)
+
   return (
     <div className="mb-4 block w-full">
       <div className="md:flex md:items-center">
@@ -19,18 +28,46 @@ export const RentFormInput = ({ label, type, id, info, placeholder, required, cu
               type={type}
               id={id}
               name={id}
-              className="w-full pl-8 rounded border border-gray-300 bg-stone-50 p-3 shadow shadow-gray-100  appearance-none outline-none text-neutral-800 invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500 peer"
+              className={"w-full pl-8 rounded border border-gray-300 bg-stone-50 p-3 shadow shadow-gray-100  appearance-none outline-none text-neutral-800 " + (isInvalid ? "border-red-500": null)}
               placeholder={placeholder}
               step="0.01"
-              required
+              {...register(name, validation)}
             />
             {currency === "true" ?  <div className="absolute inset-y-0 left-0 flex items-center px-3 pointer-events-none">
               $
             </div> : null}
-           
+            
+       
+
+      
           </div>
+          {isInvalid && (
+            <InputError
+              message={inputError.error.message}
+              key={inputError.error.message}
+            />
+          )}
         </div>
       </div>
     </div>
   );
 };
+
+const InputError = ({ message }) => {
+    return (
+      <motion.p
+        className="flex items-center gap-1 px-2 font-semibold text-red-500 rounded-md"
+        {...framer_error}
+      >
+        <MdError />
+        {message}
+      </motion.p>
+    )
+  }
+  
+  const framer_error = {
+    initial: { opacity: 0, y: 10 },
+    animate: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: 10 },
+    transition: { duration: 0.2 },
+  }

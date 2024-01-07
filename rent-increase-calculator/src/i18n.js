@@ -22,6 +22,9 @@ i18n
           header: {
             dwelling: "Information about your dwelling"
           },
+          municipalTaxModal: {
+            button: "How do I find these amounts?"
+          },
           rent: {
 label: "What is your current monthly rent?",
 info: "Enter the amount of your monthly rent (before the increase proposed by the landlord)."
@@ -40,6 +43,9 @@ info: "Enter the amount of your monthly rent (before the increase proposed by th
             municipalTax: "Taxes municipales pour le bâtiment",
             schoolTax: "Taxes scolaires pour le bâtiment",
             improvements: "Améliorations majeures, réparations ou autres travaux"
+          },
+          municipalTaxModal: {
+            button: "Comment trouver ces montants ?"
           },
           rent: {
             label: "Quel est votre loyer mensuel actuel ?",
