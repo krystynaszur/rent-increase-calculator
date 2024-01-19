@@ -1,3 +1,5 @@
+import { ModalButton } from './components/ModalButton.js'
+
 import { RentFormInput } from './components/RentFormInput'
 import { RentFormHeader } from './components/RentFormHeader'
 import  RentFormModal  from './components/RentFormModal'
@@ -25,7 +27,8 @@ export const RentForm = () => {
 
     const { t, i18n } = useTranslation();
 
-    const [isOpen, setIsOpen] = useState(false);
+  
+    //const [isOpen, setIsOpen] = useState(false);
 
     return (
       
@@ -37,11 +40,12 @@ export const RentForm = () => {
         className="container p-10 min-h-max flex flex-col items-center justify-center text-gray-500 text-sm max-w-2xl">
        <RentFormHeader text={t("header.dwelling")}/>
        <div  >
-        <button onClick={(e) => setIsOpen(true)}>Open Modal</button>
+      <ModalButton modalContent = "municipalTaxModal" slideNumber = "5" /> {/*texts= {t("municipalTaxModal.modalTexts", {returnObjects: true})} images= {images.municipalTax}
+         <button  className="flex items-center gap-1 p-5 font-semibold text-white bg-emerald-600 rounded-md hover:bg-emerald-800" onClick={(e) => setIsOpen(true)}>{t("buttons.amountSearch")}</button>
 
         
-        <RentFormModal onClick={e => e.stopPropagation()} open={isOpen} onClose={() => setIsOpen(false)} texts= {t("municipalTaxModal", {returnObjects: true})} images= {images.municipalTaxMo} />
-
+        <RentFormModal onClick={e => e.stopPropagation()} open={isOpen} onClose={() => setIsOpen(false)} texts= {t("municipalTaxModal", {returnObjects: true})} images= {images.municipalTax} />
+    */}
         </div>
 
            <RentFormInput
@@ -77,6 +81,7 @@ export const RentForm = () => {
                     }}
           />
        <div className="mt-5">
+      
           <button
             onClick={onSubmit}
             className="flex items-center gap-1 p-5 font-semibold text-white bg-emerald-600 rounded-md hover:bg-emerald-800"
