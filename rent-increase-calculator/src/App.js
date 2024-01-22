@@ -70,9 +70,9 @@ const formatted = parsedInput.toFixed(2);*/
 
     const buildingWorks = parseFloat(formData.buildingWorks);
     const buildingWorksIncrease =
-      (Math.floor(buildingWorks / 1000) * 1.67) / dwellingsNumber;
+      (Math.floor(buildingWorks / 1000) * 4) / dwellingsNumber;
     const dwellingWorks = parseFloat(formData.dwellingWorks);
-    const dwellingWorksIncrease = Math.floor(dwellingWorks / 1000) * 1.67;
+    const dwellingWorksIncrease = Math.floor(dwellingWorks / 1000) * 4;
 
     const totalIncrease =
       rentIncrease +

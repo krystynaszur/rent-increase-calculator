@@ -31,7 +31,7 @@ const MODAL_STYLES = {
     zIndex: 1000
   }
 
-export default function RentFormModal({ slideNumber, open, onClose, /*texts, images,*/ modalContent }) {
+export default function RentFormModal({ open, onClose, modalContent }) {
 
 const { t, i18n } = useTranslation();
 
@@ -100,7 +100,7 @@ const carouselItemContent = modalTexts;
          <div onClick={onClose} style={OVERLAY_STYLES} />
       <div style={MODAL_STYLES}>
         <div className="flex justify-end">
-        <button className="flex items-center gap-1 px-4 py-2 font-semibold text-white bg-emerald-600 rounded-md hover:bg-emerald-800" onClick={onClose}>Close</button>
+        <button className="flex items-center gap-1 px-4 py-2 font-semibold text-white bg-emerald-600 rounded-md hover:bg-emerald-800" onClick={onClose}> {t("buttons.close")}</button>
         </div>
      
      

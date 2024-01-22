@@ -1,6 +1,7 @@
-import { ModalButton } from './components/ModalButton.js'
+import { ModalButton } from './components/ModalButton'
 
 import { RentFormInput } from './components/RentFormInput'
+import { RentFormSelect } from './components/RentFormSelect'
 import { RentFormHeader } from './components/RentFormHeader'
 import  RentFormModal  from './components/RentFormModal'
 import React, { useState } from 'react'
@@ -40,7 +41,8 @@ export const RentForm = () => {
         className="container p-10 min-h-max flex flex-col items-center justify-center text-gray-500 text-sm max-w-2xl">
        <RentFormHeader text={t("header.dwelling")}/>
        <div  >
-      <ModalButton modalContent = "municipalTaxModal" slideNumber = "5" /> {/*texts= {t("municipalTaxModal.modalTexts", {returnObjects: true})} images= {images.municipalTax}
+       <ModalButton modalContent = {i18n.language == "fr" ? "modalTaxMunicipal" :"municipalTaxModal" } /> 
+      <ModalButton modalContent = {i18n.language == "fr" ? "modalTaxScolaire" :"schoolTaxModal" } /> {/*texts= {t("municipalTaxModal.modalTexts", {returnObjects: true})} images= {images.municipalTax}
          <button  className="flex items-center gap-1 p-5 font-semibold text-white bg-emerald-600 rounded-md hover:bg-emerald-800" onClick={(e) => setIsOpen(true)}>{t("buttons.amountSearch")}</button>
 
         
@@ -80,13 +82,23 @@ export const RentForm = () => {
                       },
                     }}
           />
+           <RentFormSelect
+             label={t("heating.label")}
+            id="heating"
+            placeholder="0"
+            required = "true"
+            info ={t("heating.info")}
+            name="heating"
+            
+          />
+        
        <div className="mt-5">
       
           <button
             onClick={onSubmit}
             className="flex items-center gap-1 p-5 font-semibold text-white bg-emerald-600 rounded-md hover:bg-emerald-800"
           >
-           Calculate rent increase
+           {t("buttons.calculate")}
           </button>
         </div>
     

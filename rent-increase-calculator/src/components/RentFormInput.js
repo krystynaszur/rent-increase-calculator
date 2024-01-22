@@ -13,9 +13,9 @@ export const RentFormInput = ({ label, type, id, info, placeholder, validation, 
     const isInvalid = isFormInvalid(inputError)
 
   return (
-    <div className="mb-4 block w-full">
+    <div className="mb-5 block w-full">
       <div className="md:flex md:items-center">
-        <div className="mb-2 md:mb-0 md:w-3/4 md:pr-2 flex items-center">
+        <div className=" md:w-3/4  mb-2 md:mb-0 pr-0 md:pr-2 flex justify-between md:justify-start items-center">
           <div>
             <label id="rent-label">{label}</label>
             {required ? <Required  /> : null}
