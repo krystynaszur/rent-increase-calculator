@@ -56,7 +56,7 @@ export const RentFormInput = ({ label, type, id, info, placeholder, validation, 
 const InputError = ({ message }) => {
     return (
       <motion.p
-        className="flex items-center gap-1 px-2 font-semibold text-red-500 rounded-md"
+        className="flex items-center gap-1 px-2 font-semibold text-xs text-red-500 rounded-md"
         {...framer_error}
       >
         <MdError />

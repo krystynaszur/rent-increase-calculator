@@ -6,14 +6,6 @@ import { RentFormHeader } from "./components/RentFormHeader";
 import RentFormModal from "./components/RentFormModal";
 import React, { useState } from "react";
 
-import images from "./images/index.js";
-import {
-  name_validation,
-  desc_validation,
-  email_validation,
-  num_validation,
-  password_validation,
-} from "./utils/inputValidations";
 import { useTranslation } from "react-i18next";
 import { FormProvider, set, useForm } from "react-hook-form";
 
@@ -170,7 +162,7 @@ export const RentForm = () => {
             validation={{
               required: {
                 value: true,
-                message: "required",
+                message: t("required"),
               },
             }}
           />
@@ -186,7 +178,7 @@ export const RentForm = () => {
             validation={{
               required: {
                 value: true,
-                message: "required",
+                message: t("required"),
               },
             }}
           />
@@ -223,7 +215,7 @@ export const RentForm = () => {
             validation={{
               required: {
                 value: true,
-                message: "required",
+                message: t("required"),
               },
             }}
           />
@@ -238,7 +230,7 @@ export const RentForm = () => {
             validation={{
               required: {
                 value: true,
-                message: "required",
+                message: t("required"),
               },
             }}
           />
@@ -261,7 +253,7 @@ export const RentForm = () => {
             validation={{
               required: {
                 value: true,
-                message: "required",
+                message: t("required"),
               },
             }}
           />
@@ -276,7 +268,7 @@ export const RentForm = () => {
             validation={{
               required: {
                 value: true,
-                message: "required",
+                message: t("required"),
               },
             }}
           />

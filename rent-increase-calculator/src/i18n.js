@@ -68,7 +68,7 @@ i18n
             button: "How do I find these amounts?",
 
             modalTexts: [
-              'To find the change in school tax for the building, go to the <b><a target="_blank" href="https://servicesenligne2.ville.montreal.qc.ca/sel/evalweb/index">Rôle d\'évaluation foncière</a></b>. Pick “Addresse” and then “Continuer.”',
+              'In order to verify how the municipal taxes have changed for your building, go to the website of <b><a target="_blank" href="https://servicesenligne2.ville.montreal.qc.ca/sel/evalweb/index">Rôle d\'évaluation foncière</a></b>. Pick “Addresse” and then “Continuer.”',
               "On the following page enter your address. The website is not available in English, but you can translate it using Google Translate.",
               "Go to the bottom of the page and click on “Compte de taxes” for both 2023 and 2022. These will open PDF documents.",
               "Copy the number labelled “Total du compte” in the bottom right of the table on the first page. Once you've found it in both PDFs, click “Close” and enter those numbers in the fields of the calculator.",
@@ -78,7 +78,7 @@ i18n
             label: "What is your current monthly rent?",
             info: "Enter the amount of your monthly rent (before the increase proposed by the landlord).",
           },
-
+required: "Required field",
           schoolTaxTwoYearsAgo: {
             label: "School tax for 2023-2024",
           },
@@ -89,10 +89,10 @@ i18n
             button: "How do I find these amounts?",
 
             modalTexts: [
-              'To find the change in school tax for the building, go to the <b><a target="_blank" href="https://servicesenligne2.ville.montreal.qc.ca/sel/evalweb/index">Rôle d\'évaluation foncière</a></b>. Pick “Addresse” and then “Continuer.”',
-              "On the following page enter your address. The website is not available in English, but you can translate it using Google Translate.",
-              "Go to the bottom of the page and click on “Compte de taxes” for both 2023 and 2022. These will open PDF documents.",
-              "Copy the number labelled “Total du compte” in the bottom right of the table on the first page. Once you've found it in both PDFs, click “Close” and enter those numbers in the fields of the calculator.",
+              'In order to verify how the school taxes have changed for your building, go to the website of  <b><a target="_blank" rel="noopener noreferrer" href="https://tfp.cgtsim.qc.ca/asp/TFP.aspx?jlsid=1&jlrun=tfpint.general.Accueil&site=int">Comité de gestion de la taxe scolaire</a></b>. Click on “View data”.',
+              "Enter your address on the following page.",
+              "Click on the bill icon.",
+              "Copy the first two numbers from the “Amount” column, which are the school tax amounts for the years 2023-2024 and 2022-2023. Then click “Close” and enter those numbers in the fields of the calculator.",
             ],
           },
           title: "RENT INCREASE ESTIMATE CALCULATOR",
@@ -155,10 +155,10 @@ i18n
           modalTaxScolaire: {
             button: "Comment trouver ces montants ?",
             modalTexts: [
-              'Pour connaître la modification de la taxe municipale pour votre immeuble, rendez-vous sur le site du <b><a target="_blank" rel="noopener noreferrer" href="https://servicesenligne2.ville.montreal.qc.ca/sel/evalweb/">Rôle d\'évaluation foncière</a></b> de Montréal. Choisissez “Addresse” et ensuite “Continuer.”',
+              'Pour connaître la modification de la taxe scolaire de l\'immeuble, rendez-vous sur le site du <b><a target="_blank" rel="noopener noreferrer" href="https://tfp.cgtsim.qc.ca/asp/tfp.aspx">Comité de gestion de la taxe scolaire</a></b>. Cliquez sur “Consultez les données”.',
               "Entrez votre adresse sur la page suivante.",
-              "Allez  au bas de la page et cliquez sur “Compte de taxes” pour 2023 et 2022. Ces documents s'ouvriront en format PDF.",
-              "Copiez le chiffre intitulé “total du compte”, en bas à droite du tableau de la première page. Une fois que vous l'avez trouvé dans les deux PDF, cliquez sur “Fermez” et entrez ces chiffres dans les champs de l'outil.",
+              "Cliquez sur l'icone de facture.",
+              "Copiez les deux premiers chiffres de la colonne “Montant”, signifiant les montants des taxes scolaires pour les années 2023-2024 et 2022-2023. Ensuite cliquez sur “Fermez” et entrez ces chiffres dans les champs de l'outil.",
             ],
           },
           municipalTaxTwoYearsAgo: {
@@ -174,6 +174,8 @@ i18n
           rentEstimateExplanation: {
 
           },
+
+          required: "Champ obligatoire",
           schoolTaxTwoYearsAgo: {
             label: "Taxe scolaire pour l’année 2022-2023",
           },
