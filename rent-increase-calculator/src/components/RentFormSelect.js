@@ -1,18 +1,19 @@
-import { Required } from "./Required";
 import { Info } from "./Info";
 import { useFormContext } from "react-hook-form";
 
+import { useTranslation } from "react-i18next";
 
-export const RentFormSelect = ({ label, type, id, info, placeholder, validation, name, required, currency }) => {
+export const RentFormSelect = ({ label, id, info,  name, options }) => {
     const { register, formState: { errors }} = useFormContext();
-
+    const { t, i18n } = useTranslation();
+console.log(options)
   return (
     <div className="mb-4 block w-full">
       <div className="md:flex md:items-center">
         <div className="mb-2  md:w-1/2 md:pr-2 flex items-center justify-between md:justify-start ">
           <div>
             <label id="rent-label">{label}</label>
-            {required ? <Required  /> : null}
+           
           </div>
           {info ? <Info infoId ={`tooltip-${id}`} infoText={info} /> : null}
         </div>
@@ -26,13 +27,13 @@ export const RentFormSelect = ({ label, type, id, info, placeholder, validation,
                   <div className="relative text-gray-700">
                     <select
                       defaultValue="0.04"
-                      className="w-full rounded shadow border border-gray-300 p-3"
+                      className="w-full rounded shadow border bg-stone-50 border-gray-300 p-3"
                       name="heating"
                       aria-labelledby="heat-label"
                       aria-describedby="heat-error"
                       {...register(name)}
                     >
-                      <option className="p-1" value="0.04">
+                   {/*}   <option className="p-1" value="0.04">
                         I pay for heating myself
                       </option>
                       <option value="0.04">
@@ -43,7 +44,13 @@ export const RentFormSelect = ({ label, type, id, info, placeholder, validation,
                       </option>
                       <option value="0.016">
                         My landlord pays for oil (or other) heating
-                      </option>
+  </option>*/}
+                      {
+        options.map((option) => (
+            <option value= {option.value}> {t(`heating.${option.type}`)} </option>
+                      
+        ))
+    }
                     </select>
                   </div>
                 </div>

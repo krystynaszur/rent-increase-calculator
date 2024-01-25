@@ -175,7 +175,7 @@ const formatted = parsedInput.toFixed(2);*/
         <h1 className="title text-4xl text-center font-extrabold">{t("title")}</h1>
       </header>
       <RentForm />
-      <main
+     {/*} <main
         key="main"
         className="min-h-max flex items-center justify-center text-gray-500 text-sm max-w-2xl"
       >
@@ -610,7 +610,7 @@ const formatted = parsedInput.toFixed(2);*/
             Submit
           </button>
         </form>
-      </main>
+      </main>*/}
     </div>
   );
 }

@@ -12,7 +12,7 @@ console.log(images);*/
 
 
   return (
-    <div>
+    <div className="w-full mb-3">
            
       <button onClick={(e) => setIsOpen(true)}
        className="flex items-center gap-1 p-5 font-semibold text-white bg-emerald-600 rounded-md hover:bg-emerald-800"
