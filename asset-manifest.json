@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/rent-increase-calculator/static/css/main.1a3d5f40.css",
-    "main.js": "/rent-increase-calculator/static/js/main.e9c5105b.js",
+    "main.css": "/rent-increase-calculator/static/css/main.77cb7af3.css",
+    "main.js": "/rent-increase-calculator/static/js/main.7c12dbb5.js",
     "static/media/slick.svg": "/rent-increase-calculator/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/rent-increase-calculator/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/rent-increase-calculator/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/rent-increase-calculator/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/rent-increase-calculator/index.html",
-    "main.1a3d5f40.css.map": "/rent-increase-calculator/static/css/main.1a3d5f40.css.map",
-    "main.e9c5105b.js.map": "/rent-increase-calculator/static/js/main.e9c5105b.js.map"
+    "main.77cb7af3.css.map": "/rent-increase-calculator/static/css/main.77cb7af3.css.map",
+    "main.7c12dbb5.js.map": "/rent-increase-calculator/static/js/main.7c12dbb5.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a3d5f40.css",
-    "static/js/main.e9c5105b.js"
+    "static/css/main.77cb7af3.css",
+    "static/js/main.7c12dbb5.js"
   ]
 }
