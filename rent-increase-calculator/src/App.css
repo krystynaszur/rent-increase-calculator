@@ -47,6 +47,14 @@ height: auto }
     max-height: 100vh;
   }
 }
+
+.carousel-text a {
+  text-decoration: underline;
+  font-weight: 700;
+  color: #047857;
+}
+
+
 /*
 
 .carousel {
