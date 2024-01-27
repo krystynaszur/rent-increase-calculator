@@ -1,13 +1,10 @@
 import ReactDom from "react-dom";
 import { CarouselItem } from "./CarouselItem";
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
-import { IoMdRadioButtonOn } from "react-icons/io";
 import Slider from "react-slick";
-import { useTranslation, Trans } from "react-i18next";
-import { Link } from "react-router-dom";
-import images from "../images/index.js";
+import { useTranslation } from "react-i18next";
 
 const MODAL_STYLES = {
   position: "fixed",
@@ -30,11 +27,12 @@ const OVERLAY_STYLES = {
 };
 
 export default function RentFormModal({ open, onClose, modalContent }) {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
-  //key of the text content
-  const modalTexts = t(`${modalContent}.modalTexts`, { returnObjects: true });
-  console.log("modalTexts " + modalTexts);
+  const carouselItemContent = t(`${modalContent}.modalTexts`, {
+    returnObjects: true,
+  });
+
   const ref = useRef(null);
 
   const handleNextSlide = () => {
@@ -45,19 +43,9 @@ export default function RentFormModal({ open, onClose, modalContent }) {
     ref.current.slickPrev();
   };
 
-  const [activeIndex, setActiveIndex] = useState(0);
-
   if (!open) {
-    console.log("modal is closed");
     return null;
-  } else {
-    console.log("modal is open");
   }
-
-  /*const carouselItemContent = texts.map( function(x, i){
-    return {"description": x, "image": images[i]}        
-}.bind(this));*/
-  const carouselItemContent = modalTexts;
 
   var settings = {
     arrows: false,
@@ -72,8 +60,8 @@ export default function RentFormModal({ open, onClose, modalContent }) {
 
   return ReactDom.createPortal(
     <>
-      <div onClick={onClose} style={OVERLAY_STYLES} />
-      <div style={MODAL_STYLES}>
+      <div onClick={onClose} className="overlay" style={OVERLAY_STYLES} />
+      <div className = "modal" style={MODAL_STYLES}>
         <div className="flex justify-end">
           <button
             className="flex items-center gap-1 px-4 py-2 font-semibold text-white bg-emerald-600 rounded-md hover:bg-emerald-800"
@@ -84,19 +72,12 @@ export default function RentFormModal({ open, onClose, modalContent }) {
           </button>
         </div>
 
-        {/* {
- this.modalContent.t("namespace.municipalTaxModal.modalTexts",  { returnObjects: true }).map((item) => (
-    <li>
-      <Trans i18nKey={item} components={[<Link to="/" />]} />
-    </li>
-  ))}*/}
         <Slider ref={ref} {...settings}>
           {carouselItemContent.map((carouselItem, index) => (
             <div
               key="1"
               style={{ width: `calc(100% / ${carouselItemContent.length})` }}
             >
-              {/*} <CarouselItem text = {`${modalContent}.modalTexts[${index}]`} index="0" />*/}
               <CarouselItem
                 texts={modalContent}
                 index={index}
@@ -106,66 +87,14 @@ export default function RentFormModal({ open, onClose, modalContent }) {
           ))}
         </Slider>
 
-        {/*  <div className="carousel">
-      <div
-        className="inner"
-        style={{ transform: `translate(-${activeIndex * 100}%)`
-     }}
-      >
-        {items.map((item) => {
-          return <CarouselItem item={item} width={"100%"} />;
-        })}
-      </div>
-
-      <div className="carousel-buttons">
-        <button
-          className="button-arrow"
-          onClick={() => {
-            updateIndex(activeIndex - 1);
-          }}
-        >
-         <IoIosArrowBack />
-
-        </button>
-        <div className="indicators">
-          {items.map((item, index) => {
-            return (
-              <button
-                className="indicator-buttons"
-                onClick={() => {
-                  updateIndex(index);
-                }}
-              >
-                <span
-                  className={`material-symbols-outlined ${
-                    index === activeIndex
-                      ? "text-emerald-900"
-                      : "text-emerald-500"
-                  }`}
-                >
-                  <IoMdRadioButtonOn />
-
-                </span>
-              </button>
-            );
-          })}
-        </div>
-        <button
-          className="button-arrow"
-          onClick={() => {
-            updateIndex(activeIndex + 1);
-          }}
-        >
-          <IoIosArrowForward />
-        </button>
-      </div>
-    </div>*/}
         <div className="mt-7 w-full flex justify-between">
           <button
             className="flex items-center  px-4 py-2 font-semibold text-white bg-emerald-600 rounded-md hover:bg-emerald-800"
             onClick={handlePrevSlide}
           >
-           <div className="pr-2"><IoIosArrowBack /></div> 
+            <div className="pr-2">
+              <IoIosArrowBack />
+            </div>
             {t("buttons.previous")}
           </button>
           <button
@@ -173,7 +102,9 @@ export default function RentFormModal({ open, onClose, modalContent }) {
             onClick={handleNextSlide}
           >
             {t("buttons.next")}
-            <div className="pl-2"><IoIosArrowForward /></div>
+            <div className="pl-2">
+              <IoIosArrowForward />
+            </div>
           </button>
         </div>
       </div>

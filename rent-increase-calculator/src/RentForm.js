@@ -1,27 +1,17 @@
-import { ModalButton } from "./components/ModalButton";
+import { ModalButton } from "./components/RentFormModalButton";
 
 import { RentFormInput } from "./components/RentFormInput";
 import { RentFormSelect } from "./components/RentFormSelect";
 import { RentFormHeader } from "./components/RentFormHeader";
-import RentFormModal from "./components/RentFormModal";
 import React, { useState } from "react";
 
 import { useTranslation } from "react-i18next";
-import { FormProvider, set, useForm } from "react-hook-form";
+import { FormProvider, useForm } from "react-hook-form";
 
 export const RentForm = () => {
   const methods = useForm();
 
   const calculateIncrease = (formData) => {
-    console.log(formData);
-    /* const rentIncrease =
-    parseFloat(formData.rent) * parseFloat(formData.heating);
-  const standardIncrease = new Intl.NumberFormat("en-CA", {
-    style: "currency",
-    currency: "CAD",
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 2,
-  }).format(rentIncrease);*/
     const heatingIncrease =
       parseFloat(formData.rent) * parseFloat(formData.heating);
     const heatingIncreaseToDisplay = new Intl.NumberFormat("en-CA", {
@@ -104,26 +94,13 @@ export const RentForm = () => {
       maximumFractionDigits: 2,
     }).format(totalIncrease);
 
-    console.log("rentIncrease " + heatingIncrease);
-    console.log("municipalTaxIncrease" + municipalTaxIncrease);
-    console.log("schoolTaxIncrease" + schoolTaxIncrease);
-    console.log("improvementsBuildingIncrease " + improvementsBuildingIncrease);
-    console.log("improvementsDwellingIncrease" + improvementsDwellingIncrease);
-    console.log("totalIncrease" + totalIncrease);
     setHeatingIncrease(heatingIncreaseToDisplay);
     setMunicipalTaxIncrease(municipalTaxIncreaseToDisplay);
     setSchoolTaxIncrease(schoolTaxIncreaseToDisplay);
     setImprovementsIncrease(improvementsIncreaseToDisplay);
     setRentIncrease(increaseToDisplay);
-    // setRentIncrease( totalIncrease )
-
-    /*alert(`Current rent: ${formData.rent}, number of dwellings  ${formData.dwellings}, 
-  heating ${formData.heating}, rentIncrease ${standardIncrease}, 
-  municipalTaxIncrease ${municipalTaxIncrease}, schoolTaxIncrease ${schoolTaxIncrease}, 
-   totalIncrease ${totalIncrease}, `);*/
   };
   const onSubmit = methods.handleSubmit((data) => {
-    console.log(data);
     calculateIncrease(data);
   });
 
@@ -190,12 +167,6 @@ export const RentForm = () => {
             name="heating"
             options={selectOptions}
           />{" "}
-          {/*texts= {t("municipalTaxModal.modalTexts", {returnObjects: true})} images= {images.municipalTax}
-         <button  className="flex items-center gap-1 p-5 font-semibold text-white bg-emerald-600 rounded-md hover:bg-emerald-800" onClick={(e) => setIsOpen(true)}>{t("buttons.amountSearch")}</button>
-
-        
-        <RentFormModal onClick={e => e.stopPropagation()} open={isOpen} onClose={() => setIsOpen(false)} texts= {t("municipalTaxModal", {returnObjects: true})} images= {images.municipalTax} />
-    */}
         </div>
         <div className="mb-4 w-full">
           <RentFormHeader text={t("header.municipalTax")} />
@@ -323,7 +294,9 @@ export const RentForm = () => {
               </div>
               <div className="md:flex md:items-center my-3">
                 <div className="md:w-3/4">{t("explanation.municipalTax")} </div>
-                <div className="md:w-1/4 font-bold">{municipalTaxIncrease} </div>
+                <div className="md:w-1/4 font-bold">
+                  {municipalTaxIncrease}{" "}
+                </div>
               </div>
               <div className="md:flex md:items-center my-3">
                 <div className="md:w-3/4">{t("explanation.schoolTax")}</div>
@@ -331,7 +304,9 @@ export const RentForm = () => {
               </div>
               <div className="md:flex md:items-center my-3">
                 <div className="md:w-3/4">{t("explanation.repairs")} </div>
-                <div className="md:w-1/4 font-bold">{improvementsIncrease} </div>
+                <div className="md:w-1/4 font-bold">
+                  {improvementsIncrease}{" "}
+                </div>
               </div>
             </div>
           </div>
