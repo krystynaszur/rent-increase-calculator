@@ -60,7 +60,7 @@ export const RentForm = () => {
     ) {
       const improvementsBuilding = parseFloat(formData.improvementsBuilding);
       improvementsBuildingIncrease =
-        (Math.floor(improvementsBuilding / 1000) * 4) / dwellings;
+        improvementsBuilding * 0.048/12/ dwellings;
     }
 
     if (
@@ -69,7 +69,7 @@ export const RentForm = () => {
     ) {
       const improvementsDwelling = parseFloat(formData.improvementsDwelling);
       improvementsDwellingIncrease =
-        Math.floor(improvementsDwelling / 1000) * 4;
+        improvementsDwelling * 0.048/12;
     }
 
     const improvementsIncrease =

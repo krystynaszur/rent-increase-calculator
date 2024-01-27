@@ -61,10 +61,10 @@ i18n
             info: "How much did your landlord spend on major repairs in your dwelling specifically? This may involve work aimed at renovating a bathroom or a kitchen, replacement of cabinets.",
           },
           municipalTaxTwoYearsAgo: {
-            label: "Municipal tax for 2022",
+            label: "Municipal tax for 2023",
           },
           municipalTaxLastYear: {
-            label: "Municipal tax for 2023",
+            label: "Municipal tax for 2024",
           },
           municipalTaxModal: {
             button: "How do I find these amounts?",
@@ -72,7 +72,7 @@ i18n
             modalTexts: [
               'In order to verify how the municipal taxes have changed for your building, go to the website of <a target="_blank" href="https://servicesenligne2.ville.montreal.qc.ca/sel/evalweb/index">Rôle d\'évaluation foncière</a>. Pick “Addresse” and then “Continuer.”',
               "On the following page enter your address. The website is not available in English, but you can translate it using Google Translate.",
-              "Go to the bottom of the page and click on “Compte de taxes” for both 2023 and 2022. These will open PDF documents.",
+              "Go to the bottom of the page and click on “Compte de taxes” for both 2024 and 2023. These will open PDF documents.",
               "Copy the number labelled “Total du compte” in the bottom right of the table on the first page. Once you've found it in both PDFs, click “Close” and enter those numbers in the fields of the calculator.",
             ],
           },
@@ -152,7 +152,7 @@ required: "Required field",
             modalTexts: [
               'Pour connaître la modification de la taxe municipale pour votre immeuble, rendez-vous sur le site du <a target="_blank" rel="noopener noreferrer" href="https://servicesenligne2.ville.montreal.qc.ca/sel/evalweb/">Rôle d\'évaluation foncière</a> de Montréal. Choisissez “Addresse” et ensuite “Continuer.”',
               "Entrez votre adresse sur la page suivante.",
-              "Allez  au bas de la page et cliquez sur “Compte de taxes” pour 2023 et 2022. Ces documents s'ouvriront en format PDF.",
+              "Allez  au bas de la page et cliquez sur “Compte de taxes” pour 2024 et 2023. Ces documents s'ouvriront en format PDF.",
               "Copiez le chiffre intitulé “total du compte”, en bas à droite du tableau de la première page. Une fois que vous l'avez trouvé dans les deux PDF, cliquez sur “Fermez” et entrez ces chiffres dans les champs de l'outil.",
             ],
           },
@@ -166,10 +166,10 @@ required: "Required field",
             ],
           },
           municipalTaxTwoYearsAgo: {
-            label: "Taxe municipale pour l’année 2022",
+            label: "Taxe municipale pour l’année 2023",
           },
           municipalTaxLastYear: {
-            label: "Taxe municipale pour l’année 2023",
+            label: "Taxe municipale pour l’année 2024",
           },
           rent: {
             label: "Quel est votre loyer mensuel actuel ?",
