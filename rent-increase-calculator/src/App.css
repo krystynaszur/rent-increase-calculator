@@ -4,6 +4,12 @@
   align-items: center;
 }
 
+.extra-text a {
+  color: #047857;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
 .lang-button {
   background-color: #3498db;
   color: white;
@@ -48,7 +54,7 @@
   }
 }
 
-.carousel-text a {
+.app a {
   text-decoration: underline;
   font-weight: 700;
   color: #047857;

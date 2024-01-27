@@ -22,25 +22,58 @@ i18n
             calculate: "Calculate rent increase",
             close: "Close",
             next: "Next",
-            previous: "Back"
+            previous: "Back",
           },
           dwellings: {
             label: "How many dwellings are in your building?",
             info: "How many separate dwellings (rented or not) are in your building? For example, a duplex where no floors are subdivided usually has 2 units.",
           },
           explanation: {
-            heating:"Base adjustement related to heating",
+            heating: "Base adjustement related to heating",
             municipalTax: "Adjustment related to municipal tax changes",
             schoolTax: "Adjustment related to school tax changes",
-            repairs: "Adjustment related to repairs"
+            repairs: "Adjustment related to repairs",
+          },
+          intro: {
+            line1:
+              "This tool is for you if you live in Montreal, rent an apartment and have received a notice of rent increase from your landlord.",
+            line2:
+              "You can check if the increase suggested by the landlord is in line with",
+            link: "https://www.tal.gouv.qc.ca/en/news/detail?code=calculation-of-the-2024-rent-adjustment",
+            linkTitle: "2024's guidelines",
+            line3:
+              "which have been published by Tribunal administratif du logement (TAL) and which define what counts as a fair and reasonable rent increase.",
+          },
+          footer: {
+            line1: "You have the right to refuse a rent increase. ",
+            line2: "Tribunal administratif du logement offers a form titled",
+            link1:
+              "https://www.tal.gouv.qc.ca/sites/default/files/notices/TAL_810A_E.pdf",
+            linkTitle1:
+              "Lessee’s response to a notice of rent increase and modification of another condition of the lease",
+            line3:
+              ", which you can print and deliver to your landlord by registered mail. Remember:",
+            line4:
+              "you must reply within one month of receiving the notice of increase.",
+            line5:
+              "If you need help, contact your local housing committee. Click",
+            link2: "https://rclalq.qc.ca/en/housing-committees/",
+            linkTitle2: "here",
+            line6: "to find the one that is the closest to you.",
+            line7: "This tool is based on 2024's estimation sheet created by",
+            line8: "You can download this estimation sheet as a ",
+            line9: "or",
+            line10: "file.",
           },
           header: {
             dwelling: "Information about your dwelling",
+            footer: "What next?",
             improvements: "Major improvements, repairs or other work",
             municipalTax: "Municipal taxes for the building",
             rentIncreaseEstimate:
               "Estimation of fair and reasonable increase of your rent",
-              rentIncreaseEstimateExplanation: "How did we calculate this estimate?",
+            rentIncreaseEstimateExplanation:
+              "How did we calculate this estimate?",
             schoolTax: "School taxes for the building",
           },
           heating: {
@@ -80,12 +113,12 @@ i18n
             label: "What is your current monthly rent?",
             info: "Enter the amount of your monthly rent (before the increase proposed by the landlord).",
           },
-required: "Required field",
+          required: "Required field",
           schoolTaxTwoYearsAgo: {
-            label: "School tax for 2023-2024",
+            label: "School tax for 2022-2023",
           },
           schoolTaxLastYear: {
-            label: "School tax for 2022-2023",
+            label: "School tax for 2023-2024",
           },
           schoolTaxModal: {
             button: "How do I find these amounts?",
@@ -106,7 +139,7 @@ required: "Required field",
             calculate: "Calculez hausse de loyer",
             close: "Fermez",
             next: "Suivant",
-            previous: "Précédent"
+            previous: "Précédent",
           },
 
           dwellings: {
@@ -114,17 +147,54 @@ required: "Required field",
             info: "How many separate dwellings (rented or not) are in your building? For example, a duplex where no floors are subdivided usually has 2 units.",
           },
           explanation: {
-            heating:"Ajustement de base lié au chauffage",
+            heating: "Ajustement de base lié au chauffage",
             municipalTax: "Ajustement lié aux changements de taxes municipales",
             schoolTax: "Ajustement lié aux changements de taxes scolaires",
-            repairs: "Ajustement lié aux rénovations"
+            repairs: "Ajustement lié aux rénovations",
+          },
+          footer: {
+            line1: "Vous avez le droit de refuser une augmentation de loyer.",
+            line2:
+              "Tribunal administratif du logement offre un formulaire intitulé",
+            link1:
+              "https://www.tal.gouv.qc.ca/sites/default/files/notices/TAL_810_E.pdf",
+            linkTitle1:
+              "Réponse du locataire à l’avis d’augmentation de loyer et de modification d’une autre condition du bail",
+            line3:
+              ", que vous pourrez imprimer et livrer à votre propriétaire par courrier recommandé. Souvenez-vous :",
+            line4:
+              "vous devez répondre dans le mois suivant la réception de l'avis d'augmentation.",
+            line5:
+              "Si vous avez besoin d'aide, contactez votre comité du logement local. Cliquez",
+            link2: "https://rclalq.qc.ca/comites-logement/",
+            linkTitle2: "ici",
+            line6: "pour trouver celui qui est le plus proche de chez vous.",
+            line7:
+              "Cet outil s'appuie sur la fiche d'estimation 2024 réalisée par",
+            line8:
+              "Vous pouvez télécharger cette fiche d'estimation sous forme du fichier ",
+            line9: "ou",
+            line10: ".",
+          },
+          intro: {
+            line1:
+              "Cet outil s'adresse à vous si vous habitez Montréal, louez un appartement et avez reçu un avis d'augmentation de loyer de votre propriétaire.",
+            line2:
+              "Vous pouvez vérifier si l'augmentation proposée par le propriétaire est conforme aux",
+            link: "https://www.tal.gouv.qc.ca/fr/actualites/detail?code=le-calcul-de-l-ajustement-des-loyers-en-2024",
+            linkTitle:
+              "directives du Tribunal administratif du logement (TAL) pour 2024",
+            line3:
+              "qui définissent ce qui constitue une augmentation de loyer juste et raisonnable.",
           },
           header: {
             dwelling: "Informations sur votre logement",
+            footer: "Et maintenant ?",
             municipalTax: "Taxes municipales pour le bâtiment",
             rentIncreaseEstimate:
               "Estimation d'une augmentation juste et raisonnable de votre loyer",
-              rentIncreaseEstimateExplanation: "Comment on a calculé cette estimation ?",
+            rentIncreaseEstimateExplanation:
+              "Comment on a calculé cette estimation ?",
             schoolTax: "Taxes scolaires pour le bâtiment",
             improvements:
               "Améliorations majeures, réparations ou autres travaux",
@@ -175,9 +245,7 @@ required: "Required field",
             label: "Quel est votre loyer mensuel actuel ?",
             info: "Indiquez le montant de votre loyer mensuel (avant l'augmentation proposée par le propriétaire).",
           },
-          rentEstimateExplanation: {
-
-          },
+          rentEstimateExplanation: {},
 
           required: "Champ obligatoire",
           schoolTaxTwoYearsAgo: {
