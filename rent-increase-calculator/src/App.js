@@ -1,6 +1,5 @@
 import "./App.css";
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
 import { RentForm } from "./RentForm";
 
 const lngs = [
@@ -16,7 +15,7 @@ export default function App() {
   };
 
   return (
-    <div className="app bg-emerald-50" key="app">
+    <div className="app bg-emerald-50 px-4 sm:px-10" key="app">
       <div key="lang-switcher" className="lang-switcher">
         {lngs.map((lng) => {
           const { code, native } = lng;
@@ -34,19 +33,19 @@ export default function App() {
           );
         })}
       </div>
-      <header key="header">
+      <header key="header"  >
         <h1 className="title text-4xl text-center font-extrabold">
           {t("title")}
         </h1>
       </header>
-      <div className="max-w-2xl mt-6 text-lg">
+      <div className="max-w-2xl mt-6 text-lg ">
       {t("intro.line1")} <br/> <br/>{t("intro.line2")} <a target="_blank" href={t("intro.link")}>{t("intro.linkTitle")}</a>
         &nbsp;{t("intro.line3")}
         <hr className="mt-6 bg-emerald-900"/>
       </div>
      
       <RentForm />
-      <div className="max-w-2xl text-lg extra-text">
+      <div className="max-w-2xl text-lg extra-text ">
         <h2 className="text-3xl font-bold mb-5 text-left text-emerald-900 w-full">
         {t("header.footer")}
         </h2>

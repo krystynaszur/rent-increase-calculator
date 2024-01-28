@@ -123,7 +123,7 @@ export const RentForm = () => {
       <form
         onSubmit={(e) => e.preventDefault()}
         noValidate
-        className="container p-10 min-h-max flex flex-col items-center justify-center text-gray-500 text-sm max-w-2xl"
+        className="container p-4 sm:p-10 min-h-max flex flex-col items-center justify-center text-gray-500 text-sm max-w-2xl"
       >
         <div className="mb-4 w-full">
           <RentFormHeader text={t("header.dwelling")} />
