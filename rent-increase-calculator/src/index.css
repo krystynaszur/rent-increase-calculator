@@ -20,4 +20,9 @@ code {
     monospace;
 }
 
+#portal a  {
+  text-decoration: underline;
+  font-weight: 700;
+  color: #047857;
+}
 
