@@ -18,6 +18,11 @@ i18n
     resources: {
       en: {
         translation: {
+          author: {
+            line1: "Made in Montreal by",
+            line2: "Check out the repo:",
+            line3: "Contact the author:"
+          },
           buttons: {
             calculate: "Calculate rent increase",
             close: "Close",
@@ -135,6 +140,11 @@ i18n
       },
       fr: {
         translation: {
+          author: {
+            line1: "Fait à Montreal par",
+            line2: "Consultez le référentiel :",
+            line3: "Contactez l'autrice :"
+          },
           buttons: {
             calculate: "Calculez hausse de loyer",
             close: "Fermez",
