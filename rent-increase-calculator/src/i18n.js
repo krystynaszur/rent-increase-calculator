@@ -264,7 +264,7 @@ i18n
           schoolTaxLastYear: {
             label: "Taxe scolaire pour l’année 2023-2024",
           },
-          title: "OUTIL D'ESTIMATION D'HAUSSE DE LOYER",
+          title: "OUTIL D'ESTIMATION DE HAUSSE DE LOYER",
         },
       },
     },
