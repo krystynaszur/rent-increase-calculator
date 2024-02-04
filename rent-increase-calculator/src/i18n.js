@@ -154,7 +154,7 @@ i18n
 
           dwellings: {
             label: "Combien de logements se trouvent dans votre bâtiment?",
-            info: "How many separate dwellings (rented or not) are in your building? For example, a duplex where no floors are subdivided usually has 2 units.",
+            info: "Combien de logements distincts (loués ou non) compte votre immeuble ? Par exemple, un duplex où aucun étage n’est subdivisé compte généralement 2 logements.",
           },
           explanation: {
             heating: "Ajustement de base lié au chauffage",
