@@ -20,7 +20,8 @@ export const Info = ({ infoId, infoText }) => {
         style={{
           backgroundColor: "#e4e4e7",
           color: "#312e81",
-          maxWidth: "400px",
+          maxWidth: "95vw",
+          width: "300px",
           zIndex: "10",
         }}
       />
