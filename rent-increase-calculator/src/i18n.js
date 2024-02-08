@@ -48,6 +48,7 @@ i18n
             linkTitle: "2024's guidelines",
             line3:
               "which have been published by Tribunal administratif du logement (TAL) and which define what counts as a fair and reasonable rent increase.",
+              line4: "This tool is easier to use than the one prepared by TAL, because it is made with tenants in mind: it only asks for information to which you have access as a tenant."
           },
           footer: {
             line1: "You have the right to refuse a rent increase. ",
@@ -111,7 +112,7 @@ i18n
               'In order to verify how the municipal taxes have changed for your building, go to the website of <a target="_blank" href="https://servicesenligne2.ville.montreal.qc.ca/sel/evalweb/index">Rôle d\'évaluation foncière</a>. Pick “Addresse” and then “Continuer.”',
               "On the following page enter your address. The website is not available in English, but you can translate it using Google Translate.",
               "Go to the bottom of the page and click on “Compte de taxes” for both 2024 and 2023. These will open PDF documents.",
-              "Copy the number labelled “Total du compte” in the bottom right of the table on the first page. Once you've found it in both PDFs, click “Close” and enter those numbers in the fields of the calculator.",
+              "Copy the number labelled “Total du compte” in the bottom right of the table on the first page. Once you've found it in both PDFs, click “Close” and enter those numbers in the fields of the calculator.<br/><br/>Enter the numbers for the whole building. Do not try to calculate the part just for your dwelling (the tool will do that automatically).",
             ],
           },
           rent: {
@@ -132,7 +133,7 @@ i18n
               'In order to verify how the school taxes have changed for your building, go to the website of  <a target="_blank" rel="noopener noreferrer" href="https://tfp.cgtsim.qc.ca/asp/TFP.aspx?jlsid=1&jlrun=tfpint.general.Accueil&site=int">Comité de gestion de la taxe scolaire</a>. Click on “View data”.',
               "Enter your address on the following page.",
               "Click on the bill icon.",
-              "Copy the first two numbers from the “Amount” column, which are the school tax amounts for the years 2023-2024 and 2022-2023. Then click “Close” and enter those numbers in the fields of the calculator.",
+              "Copy the first two numbers from the “Amount” column, which are the school tax amounts for the years 2023-2024 and 2022-2023. Then click “Close” and enter those numbers in the fields of the calculator.<br/><br/>Enter the numbers for the whole building. Do not try to calculate the part just for your dwelling (the tool will do that automatically).",
             ],
           },
           title: "RENT INCREASE ESTIMATE CALCULATOR",
@@ -196,6 +197,7 @@ i18n
               "directives du Tribunal administratif du logement (TAL) pour 2024",
             line3:
               "qui définissent ce qui constitue une augmentation de loyer juste et raisonnable.",
+              line4: "Cet outil est plus facile à utiliser que celui préparé par TAL, parce qu'il est fait en pensant aux locataires : il demande uniquement les informations auxquelles vouz avez l'accès comme locataire."
           },
           header: {
             dwelling: "Informations sur votre logement",
@@ -233,7 +235,7 @@ i18n
               'Pour connaître la modification de la taxe municipale pour votre immeuble, rendez-vous sur le site du <a target="_blank" rel="noopener noreferrer" href="https://servicesenligne2.ville.montreal.qc.ca/sel/evalweb/">Rôle d\'évaluation foncière</a> de Montréal. Choisissez “Addresse” et ensuite “Continuer.”',
               "Entrez votre adresse sur la page suivante.",
               "Allez  au bas de la page et cliquez sur “Compte de taxes” pour 2024 et 2023. Ces documents s'ouvriront en format PDF.",
-              "Copiez le chiffre intitulé “total du compte”, en bas à droite du tableau de la première page. Une fois que vous l'avez trouvé dans les deux PDF, cliquez sur “Fermez” et entrez ces chiffres dans les champs de l'outil.",
+              "Copiez le chiffre intitulé “total du compte”, en bas à droite du tableau de la première page. Une fois que vous l'avez trouvé dans les deux PDF, cliquez sur “Fermez” et entrez ces chiffres dans les champs de l'outil.<br/><br/>Entrez les chiffres pour l'ensemble du bâtiment, n'essayez pas de calculer la partie uniquement pour votre logement (l'outil le fera automatiquement).",
             ],
           },
           modalTaxScolaire: {
@@ -242,7 +244,7 @@ i18n
               'Pour connaître la modification de la taxe scolaire de l\'immeuble, rendez-vous sur le site du <a target="_blank" rel="noopener noreferrer" href="https://tfp.cgtsim.qc.ca/asp/tfp.aspx">Comité de gestion de la taxe scolaire</a>. Cliquez sur “Consultez les données”.',
               "Entrez votre adresse sur la page suivante.",
               "Cliquez sur l'icone de facture.",
-              "Copiez les deux premiers chiffres de la colonne “Montant”, signifiant les montants des taxes scolaires pour les années 2023-2024 et 2022-2023. Ensuite cliquez sur “Fermez” et entrez ces chiffres dans les champs de l'outil.",
+              "Copiez les deux premiers chiffres de la colonne “Montant”, signifiant les montants des taxes scolaires pour les années 2023-2024 et 2022-2023. Ensuite cliquez sur “Fermez” et entrez ces chiffres dans les champs de l'outil. <br/><br/>Entrez les chiffres pour l'ensemble du bâtiment, n'essayez pas de calculer la partie uniquement pour votre logement (l'outil le fera automatiquement).",
             ],
           },
           municipalTaxTwoYearsAgo: {

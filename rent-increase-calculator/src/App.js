@@ -46,7 +46,8 @@ export default function App() {
         <a target="_blank" href={t("intro.link")}>
           {t("intro.linkTitle")}
         </a>
-        &nbsp;{t("intro.line3")}
+        &nbsp;{t("intro.line3")} <br /> <br />
+        {t("intro.line4")}
         <hr className="mt-6 bg-emerald-900" />
       </div>
 
