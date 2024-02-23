@@ -57,6 +57,14 @@ export default function App() {
           {t("header.footer")}
         </h2>
         <div className="mb-4">
+          {t("footer.disclaimer1")}
+          &nbsp;<b>{t("footer.disclaimer2")}</b>{t("footer.disclaimer3")}&nbsp; 
+            <a target="_blank" href={t("footer.disclaimerLink")}>
+              {t("footer.disclaimerLinkTitle")}
+            </a>
+         
+        </div>
+        <div className="mb-4">
           <b>{t("footer.line1")}</b>&nbsp;{t("footer.line2")}&nbsp;
           <i>
             <a target="_blank" href={t("footer.link1")}>
@@ -67,7 +75,7 @@ export default function App() {
           <b>{t("footer.line4")}</b>
         </div>
         <div className="mb-4">
-          {t("footer.line5")}&nbsp;
+          {t("footer.line5")}&nbsp;<b>{t("footer.line5a")}</b>{t("footer.line5b")}&nbsp;
           <a target="_blank" href={t("footer.link2")}>
             {t("footer.linkTitle2")}
           </a>{" "}

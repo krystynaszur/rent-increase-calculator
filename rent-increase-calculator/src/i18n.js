@@ -21,7 +21,7 @@ i18n
           author: {
             line1: "Made in Montreal by",
             line2: "Check out the repo:",
-            line3: "Contact the author:"
+            line3: "Contact the author:",
           },
           buttons: {
             calculate: "Calculate rent increase",
@@ -48,9 +48,19 @@ i18n
             linkTitle: "2024's guidelines",
             line3:
               "which have been published by Tribunal administratif du logement (TAL) and which define what counts as a fair and reasonable rent increase.",
-              line4: "This tool is easier to use than the one prepared by TAL, because it is made with tenants in mind: it only asks for information to which you have access as a tenant."
+            line4:
+              "This tool is easier to use than the one prepared by TAL, because it is made with tenants in mind: it only asks for information to which you have access as a tenant.",
           },
           footer: {
+            disclaimer1:
+              "If the reasonable increase estimate calculated with the tool is much smaller than the increase proposed by the landlord, first",
+            disclaimer2: "try talking to the landlord",
+            disclaimer3:
+              ". Ask for detailed explanations of the basis for the rent increase. Perhaps it is caused by the expenses that you do not know about but that can justify a more significant rent increase (e.g. insurance, maintenance).  Ideally, the landlord should provide you with the details of these extra expenses so you could enter them in",
+            disclaimerLink:
+              "https://extranet.tal.gouv.qc.ca/internet/asp/Outildecalcul/Calcul.asp",
+            disclaimerLinkTitle:
+              "the more detailed rent increase calculation tool developed by TAL.",
             line1: "You have the right to refuse a rent increase. ",
             line2: "Tribunal administratif du logement offers a form titled",
             link1:
@@ -61,8 +71,9 @@ i18n
               ", which you can print and deliver to your landlord by registered mail. Remember:",
             line4:
               "you must reply within one month of receiving the notice of increase.",
-            line5:
-              "If you need help, contact your local housing committee. Click",
+            line5: "If you need help,",
+            line5a: "contact your local housing committee",
+            line5b: ". Click",
             link2: "https://rclalq.qc.ca/en/housing-committees/",
             linkTitle2: "here",
             line6: "to find the one that is the closest to you.",
@@ -144,7 +155,7 @@ i18n
           author: {
             line1: "Fait à Montreal par",
             line2: "Consultez le référentiel :",
-            line3: "Contactez l'autrice :"
+            line3: "Contactez l'autrice :",
           },
           buttons: {
             calculate: "Calculez hausse de loyer",
@@ -164,6 +175,15 @@ i18n
             repairs: "Ajustement lié aux rénovations",
           },
           footer: {
+            disclaimer1:
+              "Si l’estimation de hausse raisonnable calculée avec cet outil est bien inférieure à l’augmentation proposée par le propriétaire,",
+            disclaimer2: "essayez d’abord d’en parler avec le propriétaire",
+            disclaimer3:
+              ". Demandez des explications détaillées sur la base de l’augmentation du loyer. Cela est peut-être dû à des dépenses que vous ne connaissez pas mais qui peuvent justifier une augmentation plus significative de loyer (ex : assurance, entretien). Idéalement, le propriétaire devrait vous fournir le détail de ces dépenses supplémentaires afin que vous puissiez les saisir dans",
+            disclaimerLink:
+              "https://extranet.tal.gouv.qc.ca/internet/asp/Outildecalcul/Calcul.asp",
+            disclaimerLinkTitle:
+              "l'outil de calcul de l'augmentation de loyer plus détaillé développé par TAL.",
             line1: "Vous avez le droit de refuser une augmentation de loyer.",
             line2:
               "Tribunal administratif du logement offre un formulaire intitulé",
@@ -175,8 +195,9 @@ i18n
               ", que vous pourrez imprimer et livrer à votre propriétaire par courrier recommandé. Souvenez-vous :",
             line4:
               "vous devez répondre dans le mois suivant la réception de l'avis d'augmentation.",
-            line5:
-              "Si vous avez besoin d'aide, contactez votre comité du logement local. Cliquez",
+            line5: "Si vous avez besoin d'aide,",
+            line5a: "contactez votre comité du logement local",
+            line5b: ". Cliquez",
             link2: "https://rclalq.qc.ca/comites-logement/",
             linkTitle2: "ici",
             line6: "pour trouver celui qui est le plus proche de chez vous.",
@@ -197,7 +218,8 @@ i18n
               "directives du Tribunal administratif du logement (TAL) pour 2024",
             line3:
               "qui définissent ce qui constitue une augmentation de loyer juste et raisonnable.",
-              line4: "Cet outil est plus facile à utiliser que celui préparé par TAL, parce qu'il est fait en pensant aux locataires : il demande uniquement les informations auxquelles vouz avez l'accès comme locataire."
+            line4:
+              "Cet outil est plus facile à utiliser que celui préparé par TAL, parce qu'il est fait en pensant aux locataires : il demande uniquement les informations auxquelles vouz avez l'accès comme locataire.",
           },
           header: {
             dwelling: "Informations sur votre logement",
