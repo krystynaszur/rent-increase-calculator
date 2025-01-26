@@ -74,13 +74,13 @@ export default function App() {
           {t("footer.line3")}&nbsp;
           <b>{t("footer.line4")}</b>
         </div>
-        <div className="mb-4">
+         <div className="mb-4">
           {t("footer.line5")}&nbsp;<b>{t("footer.line5a")}</b>{t("footer.line5b")}&nbsp;
           <a target="_blank" href={t("footer.link2")}>
             {t("footer.linkTitle2")}
           </a>{" "}
           {t("footer.line6")}
-        </div>
+        </div>{/*
         <div className="mb-24">
           {t("footer.line7")}&nbsp;
           <a target="_blank" href="https://clpmr.com/">
@@ -110,7 +110,7 @@ export default function App() {
           </a>
           &nbsp;{t("footer.line10")}
           <br />
-        </div>
+        </div>*/}
         <div className="mb-4 flex-column text-sm justify-center italic">
           <div className="w-full mb-4">  <hr className="mt-6 bg-emerald-900" /></div>
         

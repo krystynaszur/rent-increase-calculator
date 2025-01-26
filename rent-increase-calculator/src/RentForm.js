@@ -106,10 +106,10 @@ export const RentForm = () => {
 
   const { t, i18n } = useTranslation();
   const selectOptions = [
-    { type: "self", value: 0.04 },
-    { type: "electricity", value: 0.04 },
-    { type: "gas", value: 0.033 },
-    { type: "oil", value: 0.016 },
+    { type: "self", value: 0.059 },
+    { type: "electricity", value: 0.055 },
+    { type: "gas", value: 0.05 },
+    { type: "oil", value: 0.041 },
   ];
 
   const [rentIncrease, setRentIncrease] = useState(0);

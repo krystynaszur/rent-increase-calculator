@@ -1,6 +1,6 @@
 import ReactDom from "react-dom";
 import { CarouselItem } from "./CarouselItem";
-import React, { useRef } from "react";
+import React, {  useRef } from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import Slider from "react-slick";
@@ -61,7 +61,7 @@ export default function RentFormModal({ open, onClose, modalContent }) {
   return ReactDom.createPortal(
     <>
       <div onClick={onClose} className="overlay" style={OVERLAY_STYLES} />
-      <div className = "modal" style={MODAL_STYLES}>
+      <div className="modal" style={MODAL_STYLES}>
         <div className="flex justify-end">
           <button
             className="flex items-center gap-1 px-4 py-2 font-semibold text-white bg-emerald-700 rounded-md hover:bg-emerald-800"
@@ -97,15 +97,17 @@ export default function RentFormModal({ open, onClose, modalContent }) {
             </div>
             {t("buttons.previous")}
           </button>
-          <button
-            className="flex items-center justify-between px-4 py-2 font-semibold text-white bg-emerald-400 rounded-md hover:bg-emerald-800"
-            onClick={handleNextSlide}
-          >
-            {t("buttons.next")}
-            <div className="pl-2">
-              <IoIosArrowForward />
-            </div>
-          </button>
+        
+            <button
+              className="flex items-center justify-between px-4 py-2 font-semibold text-white bg-emerald-400 rounded-md hover:bg-emerald-800"
+              onClick={handleNextSlide}
+            >
+              {t("buttons.next")}
+              <div className="pl-2">
+                <IoIosArrowForward />
+              </div>
+            </button>
+          
         </div>
       </div>
     </>,

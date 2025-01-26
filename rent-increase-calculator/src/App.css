@@ -33,8 +33,11 @@
 
 .slick-slider {
   width: 90vw;
-
   box-sizing: border-box;
+}
+
+.slick-slider img {
+  object-fit: contain; 
 }
 
 .slick-prev:before,

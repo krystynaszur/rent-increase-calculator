@@ -44,8 +44,8 @@ i18n
               "This tool is for you if you live in Montreal, rent an apartment and have received a notice of rent increase from your landlord.",
             line2:
               "You can check if the increase suggested by the landlord is in line with",
-            link: "https://www.tal.gouv.qc.ca/en/news/detail?code=calculation-of-the-2024-rent-adjustment",
-            linkTitle: "2024's guidelines",
+            link: "https://www.tal.gouv.qc.ca/en/news/detail?code=calculation-of-the-2025-rent-adjustment",
+            linkTitle: "2025's guidelines",
             line3:
               "which have been published by Tribunal administratif du logement (TAL) and which define what counts as a fair and reasonable rent increase.",
             line4:
@@ -74,10 +74,10 @@ i18n
             line5: "If you need help,",
             line5a: "contact your local housing committee",
             line5b: ". Click",
-            link2: "https://rclalq.qc.ca/en/housing-committees/",
+            link2: "https://rclalq.qc.ca/en/housing-committee/",
             linkTitle2: "here",
             line6: "to find the one that is the closest to you.",
-            line7: "This tool is based on 2024's estimation sheet created by",
+            line7: "This tool is based on 2025's estimation sheet created by",
             line8: "You can download this estimation sheet as a ",
             line9: "or",
             line10: "file.",
@@ -111,18 +111,19 @@ i18n
             info: "How much did your landlord spend on major repairs in your dwelling specifically? This may involve work aimed at renovating a bathroom or a kitchen, replacement of cabinets.",
           },
           municipalTaxTwoYearsAgo: {
-            label: "Municipal tax for 2023",
+            label: "Municipal tax for 2024",
           },
           municipalTaxLastYear: {
-            label: "Municipal tax for 2024",
+            label: "Municipal tax for 2025",
           },
           municipalTaxModal: {
             button: "How do I find these amounts?",
 
             modalTexts: [
-              'In order to verify how the municipal taxes have changed for your building, go to the website of <a target="_blank" href="https://servicesenligne2.ville.montreal.qc.ca/sel/evalweb/index">Rôle d\'évaluation foncière</a>. Pick “Addresse” and then “Continuer.”',
-              "On the following page enter your address. The website is not available in English, but you can translate it using Google Translate.",
-              "Go to the bottom of the page and click on “Compte de taxes” for both 2024 and 2023. These will open PDF documents.",
+              'In order to verify how the municipal taxes have changed for your building, go to the website of <a target="_blank" href="https://montreal.ca/role-evaluation-fonciere">Rôle d\'évaluation foncière</a>. Pick “Par adresse” and then “Suivant”.',
+              "On the following page enter your address. The website is not available in English, but you can translate it using Google Translate. Click “Rechercher”.",
+              "Click on the green arrow to the right of the address that matches yours in the list.",
+              "Go to the bottom of the page and click on “Compte de taxes” for both 2025 and 2024. These will open PDF documents.",
               "Copy the number labelled “Total du compte” in the bottom right of the table on the first page. Once you've found it in both PDFs, click “Close” and enter those numbers in the fields of the calculator.<br/><br/>Enter the numbers for the whole building. Do not try to calculate the part just for your dwelling (the tool will do that automatically).",
             ],
           },
@@ -132,10 +133,10 @@ i18n
           },
           required: "Required field",
           schoolTaxTwoYearsAgo: {
-            label: "School tax for 2022-2023",
+            label: "School tax for 2023-2024",
           },
           schoolTaxLastYear: {
-            label: "School tax for 2023-2024",
+            label: "School tax for 2024-2025",
           },
           schoolTaxModal: {
             button: "How do I find these amounts?",
@@ -202,7 +203,7 @@ i18n
             linkTitle2: "ici",
             line6: "pour trouver celui qui est le plus proche de chez vous.",
             line7:
-              "Cet outil s'appuie sur la fiche d'estimation 2024 réalisée par",
+              "Cet outil s'appuie sur la fiche d'estimation 2025 réalisée par",
             line8:
               "Vous pouvez télécharger cette fiche d'estimation sous forme du fichier ",
             line9: "ou",
@@ -213,9 +214,9 @@ i18n
               "Cet outil s'adresse à vous si vous habitez Montréal, louez un appartement et avez reçu un avis d'augmentation de loyer de votre propriétaire.",
             line2:
               "Vous pouvez vérifier si l'augmentation proposée par le propriétaire est conforme aux",
-            link: "https://www.tal.gouv.qc.ca/fr/actualites/detail?code=le-calcul-de-l-ajustement-des-loyers-en-2024",
+            link: "https://www.tal.gouv.qc.ca/fr/actualites/detail?code=le-calcul-de-l-ajustement-des-loyers-en-2025",
             linkTitle:
-              "directives du Tribunal administratif du logement (TAL) pour 2024",
+              "directives du Tribunal administratif du logement (TAL) pour 2025",
             line3:
               "qui définissent ce qui constitue une augmentation de loyer juste et raisonnable.",
             line4:
@@ -254,26 +255,27 @@ i18n
           modalTaxMunicipal: {
             button: "Comment trouver ces montants ?",
             modalTexts: [
-              'Pour connaître la modification de la taxe municipale pour votre immeuble, rendez-vous sur le site du <a target="_blank" rel="noopener noreferrer" href="https://servicesenligne2.ville.montreal.qc.ca/sel/evalweb/">Rôle d\'évaluation foncière</a> de Montréal. Choisissez “Addresse” et ensuite “Continuer.”',
-              "Entrez votre adresse sur la page suivante.",
-              "Allez  au bas de la page et cliquez sur “Compte de taxes” pour 2024 et 2023. Ces documents s'ouvriront en format PDF.",
+              'Pour connaître la modification de la taxe municipale pour votre immeuble, rendez-vous sur le site du <a target="_blank" rel="noopener noreferrer" href="https://montreal.ca/role-evaluation-fonciere">Rôle d\'évaluation foncière</a> de Montréal. Choisissez “Par adresse” et ensuite “Suivant.”',
+              "Entrez votre adresse sur la page suivante. Cliquez “Rechercher.”",
+              "Cliquez sur la flèche verte à droite de l'adresse qui correspond à la vôtre dans la liste.",
+              "Allez  au bas de la page et cliquez sur “Compte de taxes” pour 2025 et 2024. Ces documents s'ouvriront en format PDF.",
               "Copiez le chiffre intitulé “total du compte”, en bas à droite du tableau de la première page. Une fois que vous l'avez trouvé dans les deux PDF, cliquez sur “Fermez” et entrez ces chiffres dans les champs de l'outil.<br/><br/>Entrez les chiffres pour l'ensemble du bâtiment, n'essayez pas de calculer la partie uniquement pour votre logement (l'outil le fera automatiquement).",
             ],
           },
           modalTaxScolaire: {
             button: "Comment trouver ces montants ?",
             modalTexts: [
-              'Pour connaître la modification de la taxe scolaire de l\'immeuble, rendez-vous sur le site du <a target="_blank" rel="noopener noreferrer" href="https://tfp.cgtsim.qc.ca/asp/tfp.aspx">Comité de gestion de la taxe scolaire</a>. Cliquez sur “Consultez les données”.',
+              'Pour connaître la modification de la taxe scolaire de l\'immeuble, rendez-vous sur le site du <a target="_blank" rel="noopener noreferrer" href="https://tfp.cgtsim.qc.ca/asp/TFP.aspx?jlsid=1&jlrun=tfpint.general.Accueil&site=int">Comité de gestion de la taxe scolaire</a>. Cliquez sur “Consulter les données”.',
               "Entrez votre adresse sur la page suivante.",
               "Cliquez sur l'icone de facture.",
-              "Copiez les deux premiers chiffres de la colonne “Montant”, signifiant les montants des taxes scolaires pour les années 2023-2024 et 2022-2023. Ensuite cliquez sur “Fermez” et entrez ces chiffres dans les champs de l'outil. <br/><br/>Entrez les chiffres pour l'ensemble du bâtiment, n'essayez pas de calculer la partie uniquement pour votre logement (l'outil le fera automatiquement).",
+              "Copiez les deux premiers chiffres de la colonne “Montant”, signifiant les montants des taxes scolaires pour les années 2024-2025 et 2023-2024. Ensuite cliquez sur “Fermez” et entrez ces chiffres dans les champs de l'outil. <br/><br/>Entrez les chiffres pour l'ensemble du bâtiment, n'essayez pas de calculer la partie uniquement pour votre logement (l'outil le fera automatiquement).",
             ],
           },
           municipalTaxTwoYearsAgo: {
-            label: "Taxe municipale pour l’année 2023",
+            label: "Taxe municipale pour l’année 2024",
           },
           municipalTaxLastYear: {
-            label: "Taxe municipale pour l’année 2024",
+            label: "Taxe municipale pour l’année 2025",
           },
           rent: {
             label: "Quel est votre loyer mensuel actuel ?",
@@ -283,10 +285,10 @@ i18n
 
           required: "Champ obligatoire",
           schoolTaxTwoYearsAgo: {
-            label: "Taxe scolaire pour l’année 2022-2023",
+            label: "Taxe scolaire pour l’année 2023-2024",
           },
           schoolTaxLastYear: {
-            label: "Taxe scolaire pour l’année 2023-2024",
+            label: "Taxe scolaire pour l’année 2024-2025",
           },
           title: "OUTIL D'ESTIMATION DE HAUSSE DE LOYER",
         },
